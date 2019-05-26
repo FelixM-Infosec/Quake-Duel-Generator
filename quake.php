@@ -6,8 +6,8 @@
 		body         {background-image: url('assets/pictures/blackDots.png');}
 		.column      {float: left; width: 33.33%; font-size: 70pt; font-family: RoadRage; color: red;}
 		.row:after   {float: center; content: ""; display: table; clear: both;}
-		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Arial, Helvetica, sans-serif;}
-		.link        {font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: white;}
+		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
+		.link        {font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
 	</style>
 	<script>
 		function copyclip() {var copyText = document.getElementById("copybox"); copyText.select(); document.execCommand("copy");}
@@ -49,7 +49,7 @@
 		
 		echo"<div>
 				<a class='link' href='/quakesimple.php'>Simple Version</a>
-				<center><input type=button value='RE-ROLL' onClick='window.location.reload()'><input type='text' value='$paste' id='copybox' size='70' align='center'><button onclick='copyclip()'>COPY</button></center><br>
+				<center><input type=button value='⟳' onClick='window.location.reload()'><input type='text' value='$paste' id='copybox' size='70' align='center'><button onclick='copyclip()'>COPY</button></center><br>
 				<div><br></div><br><h1><center>", $map, "</center></h1><br>
 			</div>";
 		
@@ -67,6 +67,6 @@
 				</div>
 			</div>";
 	?>
-<footer class='footer'><a class='link' href=''></a></footer>
+<footer class='footer'>Made By   <a class='link' href='https://www.twitch.tv/bobbincat'>twitch.tv/bobbincat</a></footer>
 </body>
 </html>	
