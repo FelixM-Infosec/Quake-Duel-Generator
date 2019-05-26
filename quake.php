@@ -69,6 +69,6 @@
 				</div>
 			</div>";
 	?>
-<footer class='footer'></a></footer>
+<footer class='footer'></footer>
 </body>
 </html>	
