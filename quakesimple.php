@@ -1,13 +1,13 @@
 <html>
 <head>
 	<style>
-		@font-face   {font-family: RoadRage; src: url('assets/fonts/RoadRage.otf'); }
-		h1           {font-size: 60pt; font-family: RoadRage; color: white }
+		@font-face   {font-family: Calibri;}
+		h1           {font-size: 60pt; font-family: Calibri; color: white }
 		body         {background-image: url('assets/pictures/blackDots.png');}
-		.column      {float: left; width: 33.33%; font-size: 70pt; font-family: RoadRage; color: red;}
+		.column      {float: left; width: 33.33%; font-size: 40pt; font-family: Calibri; color: white;}
 		.row:after   {float: center; content: ""; display: table; clear: both;}
-		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: white;}
-		.link        {font-size: 12pt; font-family: Arial, Helvetica, sans-serif; color: white;}
+		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
+		.link        {font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
 	</style>
 	<script>
 		function copyclip() {var copyText = document.getElementById("copybox"); copyText.select(); document.execCommand("copy");}
@@ -37,14 +37,6 @@
 		$p2c3 = $p2champs[array_rand($p2champs)];
 		$p2champs = \array_diff($p2champs, [$p2c3]);
 	
-		$p1c1pic = "/assets/pictures/champs/$p1c1.png";
-		$p1c2pic = "/assets/pictures/champs/$p1c2.png";
-		$p1c3pic = "/assets/pictures/champs/$p1c3.png";
-		
-		$p2c1pic = "/assets/pictures/champs/$p2c1.png";
-		$p2c2pic = "/assets/pictures/champs/$p2c2.png";
-		$p2c3pic = "/assets/pictures/champs/$p2c3.png";
-	
 		$paste = "$map  [$p1c1,$p1c2,$p1c3]  VS  [$p2c1,$p2c2,$p2c3]";
 		
 		echo"<div>
@@ -53,20 +45,7 @@
 				<div><br></div><br><h1><center>", $map, "</center></h1><br>
 			</div>";
 		
-		echo"<div class='row'> 
-				<div class='column'>
-					<img src='$p1c1pic' alt='' align='right' style='width:150px;height:150px;'>
-					<img src='$p1c2pic' alt='' align='right' style='width:150px;height:150px;'>
-					<img src='$p1c3pic' alt='' align='right' style='width:150px;height:150px;'>
-				</div>
-					<div class='column'><center>VS</center></div>
-					<div class='column'>
-					<img src='$p2c1pic' alt='' align='left' style='width:150px;height:150px;'>
-					<img src='$p2c2pic' alt='' align='left' style='width:150px;height:150px;'>
-					<img src='$p2c3pic' alt='' align='left' style='width:150px;height:150px;'>
-				</div>
-			</div>";
 	?>
-<footer class='footer'><a class='link' href=''></a></footer>
+<footer class='footer'>Made By   <a class='link' href='https://www.twitch.tv/bobbincat'>twitch.tv/bobbincat</a></footer>
 </body>
 </html>	
