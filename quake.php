@@ -1,9 +1,14 @@
 <html>
 <head>
+	<?php
+		$maplist  = array("Awoken", "Blood Covenant", "Blood Run", "Corrupted Keep", "Ruins Of Sarnath", "Molten Falls", "Vale Of Pnath");
+		$map = $maplist[array_rand($maplist)];
+		$mapbg = "/assets/pictures/backgrounds/$map.png";
+	?>
 	<style>
 		@font-face   {font-family: RoadRage; src: url('assets/fonts/RoadRage.otf'); }
 		h1           {font-size: 60pt; font-family: RoadRage; color: white }
-		body         {background-image: url('assets/pictures/blackDots.png');}
+		body         {background-image: url('<?php echo $mapbg ?>');}
 		.column      {float: left; width: 33.33%; font-size: 70pt; font-family: RoadRage; color: red;}
 		.row:after   {float: center; content: ""; display: table; clear: both;}
 		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
@@ -19,10 +24,7 @@
 	<?php
 		$p1champs = array("Nyx", "Scalebearer", "Anarki", "Slash", "Clutch", "Galena", "Ranger", "Visor", "Sorlag", "BJ", "Doom", "Keel", "Strogg", "Death Knight", "Athena", "Eisen");
 		$p2champs = array("Nyx", "Scalebearer", "Anarki", "Slash", "Clutch", "Galena", "Ranger", "Visor", "Sorlag", "BJ", "Doom", "Keel", "Strogg", "Death Knight", "Athena", "Eisen");
-		$maplist  = array("Awoken", "Blood Covenant", "Blood Run", "Corrupted Keep", "Ruins Of Sarnath", "Molten Falls", "Vale Of Pnath");
 		
-		$map = $maplist[array_rand($maplist)];
-	
 		$p1c1 = $p1champs[array_rand($p1champs)];
 		$p1champs = \array_diff($p1champs, [$p1c1]);
 		$p1c2 = $p1champs[array_rand($p1champs)];
@@ -47,7 +49,7 @@
 	
 		$paste = "$map  [$p1c1,$p1c2,$p1c3]  VS  [$p2c1,$p2c2,$p2c3]";
 		
-		echo"<div>
+		echo"<div style=background-image: url('$mapbg')>
 				<a class='link' href='/quakesimple.php'>Simple Version</a>
 				<center><input type=button value='⟳' onClick='window.location.reload()'><input type='text' value='$paste' id='copybox' size='70' align='center'><button onclick='copyclip()'>COPY</button></center><br>
 				<div><br></div><br><h1><center>", $map, "</center></h1><br>
@@ -67,6 +69,6 @@
 				</div>
 			</div>";
 	?>
-<footer class='footer'></footer>
+<footer class='footer'></a></footer>
 </body>
 </html>	

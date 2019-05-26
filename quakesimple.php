@@ -46,6 +46,6 @@
 			</div>";
 		
 	?>
-<footer class='footer'></footer>
+<footer class='footer'>Made By   <a class='link' href='https://www.twitch.tv/bobbincat'>twitch.tv/bobbincat</a></footer>
 </body>
 </html>	
