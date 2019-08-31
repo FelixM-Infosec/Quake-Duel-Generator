@@ -6,13 +6,14 @@
 		$mapbg = "/assets/pictures/backgrounds/$map.png";
 	?>
 	<style>
-		@font-face   {font-family: RoadRage; src: url('assets/fonts/RoadRage.otf'); }
-		h1           {font-size: 60pt; font-family: RoadRage; color: white }
-		body         {background-image: url('<?php echo $mapbg ?>');}
-		.column      {float: left; width: 33.33%; font-size: 70pt; font-family: RoadRage; color: red;}
-		.row:after   {float: center; content: ""; display: table; clear: both;}
-		.footer      {position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
-		.link        {font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white;}
+		@font-face   { font-family: RoadRage; src: url('assets/fonts/RoadRage.otf'); }
+		h1           { font-size: 60pt; font-family: RoadRage; color: white }
+		body         { background-image: url('<?php echo $mapbg ?>'); }
+		
+		.column      { float: left; width: 33.33%; font-size: 70pt; font-family: RoadRage; color: red; }
+		.row:after   { float: center; content: ""; display: table; clear: both; }
+		.footer      { position:absolute; bottom:2; align: right; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white; }
+		.link        { font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; color: white; }
 	</style>
 	<script>
 		function copyclip() {var copyText = document.getElementById("copybox"); copyText.select(); document.execCommand("copy");}
